@@ -1,31 +1,31 @@
-<h1>@board.title</h1>
+<h1> <%= @board.title %></h1>
 <div class="container">
   <div class="row">
     <div id="backlog" class="col-3">
       <p>Backlog</p>
       <% @board.backlog_cards.each do |card| %>
-        Title: <%= card.title %>
+        Title: <%= card.title %><br>
         Description: <%= card.description %>
       <% end %>
     </div>
     <div id="current sprint" class="col-3">
       <p>Current Sprint</p>
       <% @board.current_cards.each do |card| %>
-        Title: <%= card.title %>
+        Title: <%= card.title %><br>
         Description: <%= card.description %>
       <% end %>
     </div>
     <div id="in progress" class="col-3">
       <p>In Progress</p>
       <% @board.in_progress_cards.each do |card| %>
-        Title: <%= card.title %>
+        Title: <%= card.title %><br>
         Description: <%= card.description %>
       <% end %>
     </div>
     <div id="done" class="col-3">
       <p>Done</p>
       <% @board.done_cards.each do |card| %>
-        Title: <%= card.title %>
+        Title: <%= card.title %><br>
         Description: <%= card.description %>
       <% end %>
     </div>
